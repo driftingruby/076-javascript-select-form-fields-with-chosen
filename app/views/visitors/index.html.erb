@@ -1,2 +1,13 @@
 <h1>Visitors#index</h1>
 <p>Find me in app/views/visitors/index.html.erb</p>
+<div class='row'>
+  <div class='col-xs-2'>Select User to Edit</div>
+  <div class='col-xs-10'>
+    <%= select_tag "users", 
+          options_for_select(@users.map{ |user| [user.full_name, user.id, data: { url: edit_user_path(user) }]}), 
+          class: 'chosen-select' %>
+  </div>
+</div>
+
+<hr>
+<div id='user_form'></div>

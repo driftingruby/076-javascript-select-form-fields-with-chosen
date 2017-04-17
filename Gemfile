@@ -25,3 +25,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'faker'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-chosen'
+  gem 'rails-assets-chosen-bootstrap'
+end
